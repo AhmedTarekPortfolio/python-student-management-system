@@ -1,72 +1,54 @@
 # Python Student Management System
 
-A command-line student management system built with Python. It stores students and their subject grades, supports grade updates, and generates a summary of class performance.
+A menu-driven command-line learning project for managing students, subject grades, individual results, and class summaries.
 
 ## Features
 
-- Display all students and their grades
-- Search for a student by name
-- Add new students
-- Add new subject grades
-- Update existing grades
-- Calculate each student's average
-- Show pass or fail status
-- Identify the best- and worst-performing students
-- Calculate the class average
-- Count passed and failed students
-- Validate menu choices and grade input
+- Display all students and grades
+- Search consistently without case-sensitive name matching
+- Reject empty and duplicate student names
+- Add or update subject grades from 0 to 100
+- Handle students with no grades safely
+- Calculate averages and pass/fail results
+- Report class average, best/worst student, and pass/fail counts
 
-## Concepts Practiced
+## Run
 
-- Nested dictionaries
-- Loops and conditional statements
-- User input
-- Exception handling
-- Dictionary updates
-- Average and summary calculations
-
-## Requirements
-
-- Python 3
-
-No external packages are required.
-
-## Run the Program
-
-Clone the repository:
-
-```bash
-git clone https://github.com/AhmedTarekPortfolio/python-student-management-system.git
-cd python-student-management-system
-```
-
-Run the program:
+Requires Python 3.10 or newer and no external packages.
 
 ```bash
 python student_management_system.py
 ```
 
-On some systems, use:
+## Test
 
 ```bash
-python3 student_management_system.py
+python -m unittest discover -s tests -v
 ```
 
-## Menu Options
+## Example session
 
+```text
 1. Show all students
 2. Search for a student
-3. Add a new student
+3. Add a student
 4. Add or update a grade
-5. Show class summary
+5. Class summary
 6. Exit
+Choose an option: 2
+Student name: ahmed
+Student: Ahmed
+Math: 80
+English: 90
+Python: 75
+Average: 81.67
+Status: Passed
+```
 
-## Grade Rules
+## Concepts practiced
 
-- Grades must be between 0 and 100.
-- An average of 50 or higher is considered a pass.
-- Students without grades are excluded from the class-average calculation.
+Functions, nested dictionaries, type hints, loops, conditions, input validation, calculations, docstrings, and unit tests.
 
-## Author
+## Project status
 
-Ahmed Tarek
+Completed learning project. The program uses sample data in memory and is not a production school-record system.
